@@ -7,7 +7,7 @@
 	<meta name="description" content="">
 	<meta name="author" content="">
 	<link rel="icon" href="./assets/img/favicon.ico">
-	<title>Live Streaming on AWS</title>
+	<title>Automation Logic TV</title>
 	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
 	<link href="./assets/css/video-js.css" rel="stylesheet">
 	<link href="./assets/css/app.css" rel="stylesheet">
@@ -16,8 +16,8 @@
 <body>
 	<!-- Navbar -->
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-		<img class="header-logo mx-2" src="./assets/img/smile.png" alt="logo">
-		<a class="navbar-brand" href="./index.html">Live Streaming on AWS</a>
+		<img class="header-logo mx-2" src="https://automationlogic.com/wp-content/themes/automation-logic/img/logo.png" alt="logo">
+		<a class="navbar-brand" href="./index.html">Automation Logic TV</a>
 	</nav>
 
 	<!-- Content -->
@@ -25,9 +25,13 @@
 
 		<section class="text-center pb-4">
 			<p class="lead">
-				This demo provides links and a preview player for the HLS, DASH, Microsoft Smooth and CMAF
-				CloudFront endpoints created by the Live Stream on AWS solution.
+				Welcome to the party! Click one of the 'previ'
 			</p>
+			<p class="lead">
+				Leave your google hangouts open, and listen to this stream in a separate window - you can mute the music (or your friends) independently then.
+			</p>
+			<p class="lead">
+				We're going to play a mix of chilled tunes, with a few records themed after the current apolocalypse, then later some party bangers!
 		</section>
 
 		<section class="mb-4">
@@ -36,7 +40,7 @@
 				class="video-js"
 				height="480"
 				controls
-				poster="./assets/img/aws-logo.png"
+				poster="https://automationlogic.com/wp-content/themes/automation-logic/img/logo.png"
 				crossorigin="anonymous"
 				autoplay preload="auto"
 				data-setup='{"fluid": true}'>
@@ -47,30 +51,30 @@
 		<section class="text-center mb-4">
 			<p class="mb-4">
 				<strong>Important!</strong>
-				To preview the live stream endpoints bellow first login to the <a id="live" href="" target="_blank">Medialive Console</a>
-				and check the live channel is running.
+				We've set up a few different hangouts meeting rooms, each with their own slack channels.</p>
+				<p> So if you cant get a word in edgeways, pop out to the #smokingarea, or if you have any song requests for us, come to #dancefloor
 			</p>
 			<table class="table">
 				<tbody>
 					<tr>
 						<td>HLS </td>
 						<td class="d-none d-sm-block"  style="font-size: 0.9rem;" id="hls"></td>
-						<td><button class="btn btn-success btn-sm" onclick="loadHls(hls_url)">Preview</button></td>
+						<td><button class="btn btn-success btn-sm" onclick="loadHls(hls_url)">Try me first</button></td>
 					</tr>
 					<tr>
 						<td>DASH</td>
 						<td class="d-none d-sm-block" style="font-size: 0.9rem;" id="dash"></td>
-						<td><button class="btn btn-success btn-sm" onclick="loadDash(dash_url)">Preview</button></td>
+						<td><button class="btn btn-success btn-sm" onclick="loadDash(dash_url)">Try me first</button></td>
 					</tr>
 					<tr>
 						<td>MSS</td>
 						<td class="d-none d-sm-block" style="font-size: 0.9rem;" id="mss"></td>
-						<td><button class="btn btn-success btn-sm" onclick="loadMss(mss_url)">Preview</button></td>
+						<td><button class="btn btn-success btn-sm" onclick="loadMss(mss_url)">Then me</button></td>
 					</tr>
 					<tr>
 						<td>CMAF </td>
 						<td class="d-none d-sm-block"  style="font-size: 0.9rem;" id="cmaf"></td>
-						<td><button class="btn btn-success btn-sm" onclick="loadCmaf(cmaf_url)">Preview</button></td>
+						<td><button class="btn btn-success btn-sm" onclick="loadCmaf(cmaf_url)">God help you</button></td>
 					</tr>
 				</tbody>
 			</table>
@@ -78,7 +82,7 @@
 
 		<section class="p-4">
 			<div class="row">
-				<div class="col-sm-6">
+				<!-- <div class="col-sm-6">
 					<div class="card">
 						<div class="card-header">Solution Resources</div>
 						<div class="card-body">
@@ -89,10 +93,10 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				</div> -->
 				<div class="col-sm-6">
 					<div class="card">
-						<div class="card-header">AWS Services Documentation</div>
+						<div class="card-header">This stream brought to you by AWS stuff:</div>
 						<div class="card-body">
 							<ul>
 								<li><a href="https://aws.amazon.com/medialive/" target="_blank">AWS Elemental MediaLive</a></li>
@@ -109,7 +113,7 @@
 
 	<!-- Footer -->
 	<footer class="footer">
-		<span><a href="https://aws.amazon.com/answers/">AWS Answers</a></span>
+		<span><a href="https://www.automationlogic.com/">Code stolen from AWS with ❤️ by Automation Logic </a></span>
 	</footer>
 
 	<!-- Bootstrap core -->
